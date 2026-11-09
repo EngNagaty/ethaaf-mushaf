@@ -378,6 +378,70 @@ i.ns{background:#E4E2DA;border-radius:3px}
 .pt-x{width:32px;height:38px;display:grid;place-items:center;color:#BFC2A8;border-inline-start:1px solid rgba(255,255,255,.14)}
 .pt-x svg{width:16px;height:16px}
 .pop-pv{flex-basis:100%;font-size:11px;color:#CFD2B8;padding:0 8px 2px}
+/* ---- supervisor web dashboard (SV) ---- */
+.deskwrap{position:relative;max-width:100%;overflow:hidden;border-radius:12px;box-shadow:0 24px 50px -28px rgba(40,38,20,.5)}
+.deskwrap[hidden]{display:none}
+.desk{width:1280px;height:800px;transform-origin:top right;position:absolute;top:0;right:0;background:#F7F7F5;font-family:Cairo,sans-serif;color:#22241A}
+.dk{display:flex;height:100%;position:relative}
+.dk-side{width:240px;flex-shrink:0;background:#fff;border-inline-start:1px solid #ECEAE4;padding:20px 14px;display:flex;flex-direction:column;gap:22px}
+.dk-logo{display:flex;gap:10px;align-items:center;padding:6px}
+.dk-logo>span{width:40px;height:40px;border-radius:10px;background:#F3EFE3;color:#7A2B35;display:grid;place-items:center}
+.dk-logo b{display:block;font-size:15px}.dk-logo small{font-size:11px;color:#8C8B7E}
+.dk-side nav{display:flex;flex-direction:column;gap:4px}
+.dk-side nav span{padding:11px 14px;border-radius:10px;font-size:14.5px;color:#3A3C2E}
+.dk-side nav span.on{background:#F3EFE3;font-weight:700;border-inline-end:3px solid var(--exO)}
+.dk-main{flex:1;min-width:0;display:flex;flex-direction:column}
+.dk-top{height:68px;flex-shrink:0;background:#fff;border-bottom:1px solid #ECEAE4;display:flex;align-items:center;justify-content:space-between;padding:0 24px}
+.dk-search{width:420px;height:40px;border:1px solid #E6E3DA;border-radius:10px;display:flex;align-items:center;padding:0 14px;color:#9A988C;font-size:13px}
+.dk-user{text-align:start}.dk-user b{display:block;font-size:14px}.dk-user small{font-size:12px;color:#8C8B7E}
+.dk-body{flex:1;overflow:auto;padding:20px 28px 40px;display:flex;flex-direction:column;gap:16px}
+.dk-crumb{font-size:12.5px;color:#8C8B7E}.dk-crumb b{color:#3A3C2E}
+.dk-h{margin:0;font-size:24px;font-weight:800}.dk-sub{margin:2px 0 0;color:#6E6D62;font-size:13.5px}
+.dk-scope{display:inline-flex;align-items:center;gap:6px;background:#EEF0E2;color:#3F4330;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:700}
+.dk-scope svg{width:14px;height:14px}
+.dk-filters{display:flex;gap:10px;align-items:flex-end;flex-wrap:wrap;background:#fff;border:1px solid #ECEAE4;border-radius:14px;padding:12px 14px}
+.dk-f{display:flex;flex-direction:column;gap:4px;flex:1;min-width:140px}
+.dk-f span{font-size:11.5px;font-weight:700;color:#6E6D62}
+.dk-f select{height:38px;border:1px solid #E0DCD0;border-radius:9px;background:#fff;font:inherit;font-size:13px;padding:0 10px;color:#22241A}
+.dk-btn2{height:38px;padding:0 14px;border-radius:9px;border:1px solid var(--exO);color:var(--exO);background:#fff;font-weight:700;font-size:13px}
+.dk-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.dk-kpi{background:#fff;border:1px solid #ECEAE4;border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+.dk-kpi span{font-size:12.5px;color:#6E6D62}.dk-kpi b{font-size:26px;font-weight:700}
+.dk-card{background:#fff;border:1px solid #ECEAE4;border-radius:14px;padding:6px 18px 16px}
+.dk-tabs{display:flex;gap:4px;border-bottom:1px solid #ECEAE4;margin:0 -18px 6px;padding:0 12px}
+.dk-tabs button{padding:14px 14px 12px;font-size:14px;font-weight:700;color:#6E6D62;border-bottom:2.5px solid transparent}
+.dk-tabs button[aria-pressed=true]{color:#22241A;border-color:var(--exO)}
+.dk-t{width:100%;border-collapse:collapse;font-size:13.5px}
+.dk-t th{text-align:start;font-size:12px;color:#6E6D62;font-weight:700;padding:10px 10px;border-bottom:1px solid #ECEAE4;white-space:nowrap}
+.dk-t td{padding:10px;border-bottom:1px solid #F1EFE9;vertical-align:middle}
+.dk-t tbody tr[data-act]{cursor:pointer}.dk-t tbody tr[data-act]:hover{background:#FAF8F2}
+.dk-t td b{font-size:13.5px}.dk-t .q{display:block;font-family:"Amiri Quran",serif;font-size:15px;color:#4A4A40;line-height:1.9}
+.dk-t .n{font-variant-numeric:tabular-nums;white-space:nowrap}.dk-t small{color:#8C8B7E;font-size:11.5px}
+.dk-t .chev{width:24px;color:#B0AD9F}
+.bar{display:inline-block;width:120px;height:8px;background:#F1EFE7;border-radius:4px;vertical-align:middle;margin-inline-end:8px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:4px}.bar i.e{background:#B5523A}.bar i.h{background:#C98A2B}
+.dk-note{font-size:12px;color:#6E6D62;margin:12px 0 0;line-height:1.7}
+.dk-empty{display:flex;flex-direction:column;align-items:center;gap:8px;padding:48px 20px;text-align:center;color:#6E6D62;font-size:13.5px}
+.dk-empty b{font-size:16px;color:#22241A}
+.dk-scroll{overflow-x:auto;margin-top:12px}
+.dk-t.evo td,.dk-t.evo th{text-align:center}.dk-t.evo td:first-child,.dk-t.evo th:first-child{text-align:start}
+.dk-t.evo th small{display:block;font-weight:500}
+.dk-t.evo td.na{background:repeating-linear-gradient(45deg,#F4F2EC 0 6px,#EEEBE2 6px 12px)}
+.dk-t.evo .dash{color:#8C8B7E}
+.dk-t tr.hl td{background:#FBF7E6}
+.dk .mk{font-size:11.5px}
+.dk-dim{position:absolute;inset:0;background:rgba(28,29,22,.35);z-index:20;display:flex;justify-content:flex-end}
+.dk-drw{width:440px;height:100%;background:#fff;padding:20px 22px;overflow:auto;display:flex;flex-direction:column;gap:12px;box-shadow:12px 0 30px -12px rgba(0,0,0,.3)}
+.dk-drw h3{margin:0;font-size:18px}.dk-drw h4{margin:8px 0 0;font-size:14px}
+.dk-mini{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.dk-mini div{background:#F7F6F1;border-radius:10px;padding:10px 12px}.dk-mini span{display:block;font-size:11.5px;color:#6E6D62}.dk-mini b{font-size:19px}
+.dk-mini .nd{font-size:12px;font-weight:700;color:#6E6D62}
+.dk-t.sm td,.dk-t.sm th{padding:8px}
+.dk-list{display:flex;flex-direction:column;border:1px solid #ECEAE4;border-radius:12px;overflow:hidden}
+.dk-list button{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;text-align:start}
+.dk-list button+button{border-top:1px solid #F1EFE9}.dk-list button:hover{background:#FAF8F2}
+.dk-list b{display:block;font-size:13.5px}.dk-list small{font-size:11.5px;color:#8C8B7E}
+.stage:has(#deskwrap:not([hidden])) .caption{max-width:760px}
 </style>
 <div dir="rtl" lang="ar">
 <header class="top">
@@ -387,13 +451,14 @@ i.ns{background:#E4E2DA;border-radius:3px}
 <div id="proto">
 <div class="wrap">
  <aside class="panel">
-  <div class="role"><button data-r="t" aria-pressed="true">المعلم</button><button data-r="s" aria-pressed="false">الطالب</button></div>
+  <div class="role"><button data-r="t" aria-pressed="true">المعلم</button><button data-r="s" aria-pressed="false">الطالب</button><button data-r="sv" aria-pressed="false">المشرف</button></div>
   <div id="list"></div>
   <label class="simrow"><span>محاكاة فشل الحفظ</span><input type="checkbox" id="simf"></label>
  </aside>
  <main class="stage">
   <div class="mselect"><select id="msel" aria-label="الشاشة والحالة"></select></div>
   <div class="phone" id="phone"></div>
+  <div class="deskwrap" id="deskwrap" hidden><div class="desk" id="desk"></div></div>
   <div class="caption" id="cap"></div>
  </main>
 </div>
@@ -487,6 +552,19 @@ i.ns{background:#E4E2DA;border-radius:3px}
 <li><b>التباين:</b> النص الثانوي أغمق (‎#6E6D62) ليحقق نسبة 4.5:1.</li>
 </ul>
 
+
+<h2>شاشات المشرف (FR-10)</h2>
+<p>تقرير «المصحف التفاعلي» داخل «مركز التقارير» في لوحة الويب، محصور في نطاق إشراف المستخدم ويظهر النطاق في أعلى الصفحة.</p>
+<div class="tw"><table>
+<tr><th>المعرّف</th><th>الشاشة</th><th>ما تعرضه</th></tr>
+<tr><td>SV-01</td><td>أكثر الآيات خطأً / ترددًا</td><td>ترتيب الآيات بعدد المحاولات المحفوظة التي رُصدت فيها العلامة، والنسبة إلى كل المحاولات التي شملت الآية، وعدد الطلاب المتأثرين الفريدين.</td></tr>
+<tr><td>SV-02</td><td>الملاحظات الحالية</td><td>عدد الطلاب الذين تظهر في حالتهم الحالية علامة خطأ أو تردد على كل آية؛ لا يتأثر بفلتر الفترة.</td></tr>
+<tr><td>SV-03</td><td>تفاصيل آية</td><td>درج جانبي: النص، النسب، التوزيع حسب الحلقة، والطلاب الذين عليهم ملاحظة حالية مع الانتقال إلى تطورهم.</td></tr>
+<tr><td>SV-04</td><td>تطور الطالب</td><td>جدول الآيات × المحاولات المتتالية: علامة، «—» شملها التسميع دون علامة، خلية مخططة لم تشملها المحاولة، و«زالت العلامة».</td></tr>
+<tr><td>SV-05</td><td>لا توجد بيانات كافية</td><td>بدل 0% عند عدم وجود محاولات مؤهلة، مع إعادة ضبط الفلاتر.</td></tr>
+</table></div>
+<p>الفلاتر: الفترة، الحلقة، الطالب، السورة، البند. نوع الملاحظة يُختار من التبويبات. السجلات السابقة لتفعيل الميزة مستبعدة من البسط والمقام.</p>
+
 <h2>البيانات الافتراضية</h2>
 <p>الطالب «عبدالرحمن خالد الشمري»، حلقة «ابن عامر (نوعيّة)»، المعلم «أ. ماجد القحطاني» — أسماء افتراضية. السجل: النبأ 1–20 (سجل سابق بلا تفاصيل)، الملك 1–15 (مكتمل)، الملك 16–30 (غير مكتمل)، الملك 1–10 (مكتمل، وأزال علامة الآية 3).</p>
 
@@ -563,6 +641,7 @@ function fresh(){return{
  att:clone(BASE_ATT),rev:clone(BASE_REV),
  t:{day:'p',rangeOk:true,scores:{d:null,n:null,f:null},pm:{d:{},n:{},f:{}},part:'d',rtab:'rasd',cp:{d:true,n:true,f:true},sel:null,load:'ok',saved:null,saving:false,saveErr:false,complete:null,simFail:false,view:null,edit:null,editSel:null},
  s:{load:'ok',tab:'courses',course:null,sel:null,empty:false},
+ v:svFresh(),
 }}
 
 /* derived for the student */
@@ -810,9 +889,12 @@ function sDetail(){
 function toast(){return S.toast?`<div class="toast" role="status">${I.ok}${S.toast}</div>`:''}
 
 /* ---------- render ---------- */
-const root=()=>document.getElementById('phone');
+const root=()=>document.getElementById(S&&S.role==='sv'?'desk':'phone');
 let lastKey='';
 function render(after){
+ const dw=document.getElementById('deskwrap'),ph=document.getElementById('phone');
+ if(S.role==='sv'){dw.hidden=false;ph.hidden=true;const d=document.getElementById('desk'),b=d.querySelector('#dkb'),t=b?b.scrollTop:0,dr=d.querySelector('.dk-drw'),dt=dr?dr.scrollTop:0;d.innerHTML=svRender();const nb=d.querySelector('#dkb');if(nb)nb.scrollTop=t;const nd=d.querySelector('.dk-drw');if(nd)nd.scrollTop=dt;fitDesk();if(after)after(d);syncPanel();return}
+ dw.hidden=true;ph.hidden=false;
  const el=root(),old=el.querySelector('.screen>.scr'),key=S.role+S.scr+(S.t.view||'')+(S.s.course||'');
  const top=old&&key===lastKey?old.scrollTop:0;
  const sheetTop=el.querySelector('.sheet .scr')?.scrollTop||0;
@@ -881,6 +963,121 @@ document.addEventListener('click',onAct);
 document.addEventListener('change',e=>{const el=e.target.closest('[data-chg]');if(!el||!root().contains(el))return;if(el.dataset.chg==='score'){S.t.scores[el.dataset.p]=el.value===''?null:+el.value;render()}});
 document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches?.('.ay[data-act]')){e.preventDefault();onAct(e)}});
 
+/* =============== SUPERVISOR (FR-10) — web dashboard =============== */
+const SVH=[{id:'h1',n:'ابن عامر (نوعيّة)'},{id:'h2',n:'أبي بن كعب'},{id:'h3',n:'عاصم بن أبي النجود'}];
+const SVNAMES=[['يوسف سعد العنزي','h1'],['فيصل ناصر الدوسري','h1'],['تركي سلمان العتيبي','h1'],['مازن عادل الحربي','h1'],['سلطان فهد القرني','h1'],
+ ['عمر خالد الزهراني','h2'],['بدر ماجد الغامدي','h2'],['نواف علي الشهري','h2'],['ريان محمد السبيعي','h2'],['حمزة سامي المطيري','h2'],['أنس وليد العمري','h2'],
+ ['معاذ إبراهيم الرشيدي','h3'],['زياد ناصر البقمي','h3'],['إياد صالح الجهني','h3'],['عبدالله تركي الحارثي','h3'],['سعود عبدالعزيز الشمراني','h3'],['هشام يحيى عسيري','h3']];
+const HARD={'67:3':.42,'67:5':.22,'67:11':.18,'67:19':.48,'67:23':.32,'67:27':.38,'68:4':.26,'68:8':.44,'68:13':.34,'78:7':.22,'78:17':.4,'78:26':.28};
+const PL={d:'الدرس',n:'القريبة',f:'البعيدة'};
+let SVD=null;
+function svData(){
+ let seed=20261108;const rnd=()=>{seed=(seed*1103515245+12345)&0x7fffffff;return seed/0x7fffffff};
+ const stu=[{id:'me',n:STU.name,h:'h1'},...SVNAMES.map((x,i)=>({id:'s'+i,n:x[0],h:x[1]}))];
+ const att=[];
+ const plan=[['2026-09-14',[{s:67,a:1,b:15}],'d'],['2026-09-28',[{s:67,a:16,b:30}],'d'],['2026-10-12',[{s:67,a:1,b:30}],'n'],['2026-10-26',[{s:68,a:1,b:15}],'d'],['2026-11-02',[{s:67,a:1,b:15}],'f'],['2026-11-08',[{s:78,a:1,b:30}],'d']];
+ stu.slice(1).forEach((st,i)=>{
+  if(i%3===0)att.push({sid:st.id,date:'2026-03-15',range:[{s:78,a:1,b:20}],part:'d',legacy:true,marks:{}});
+  const seen={};
+  plan.forEach(([d,r,p],j)=>{if(j===5&&i%2)return;
+   const dd=new Date(d+'T12:00:00');dd.setDate(dd.getDate()+(i%4));const date=dd.toISOString().slice(0,10);
+   const marks={};keys(r).forEach(k=>{const n=seen[k]||0;seen[k]=n+1;const f=Math.pow(.62,n),hd=HARD[k]||0;
+    const e=rnd()<(.05+hd)*f,h=rnd()<(.07+hd*.7)*f;if(e||h)marks[k]={e:e?1:0,h:h?1:0}});
+   att.push({sid:st.id,date,range:clone(r),part:p,legacy:false,marks})});
+ });
+ return{stu,att};
+}
+function svAll(){if(!SVD)SVD=svData();const mine=S.att.map(a=>({sid:'me',date:a.date,range:a.range,part:a.id.startsWith('t1')?a.id.slice(2):'d',legacy:!!a.legacy,marks:a.marks}));return{stu:SVD.stu,att:[...SVD.att,...mine]}}
+const svStu=id=>svAll().stu.find(s=>s.id===id);
+function svFilt(){const v=S.v,D=svAll(),from=v.period==='30'?'2026-10-09':v.period==='sem'?'2026-08-23':'0000';
+ const st=D.stu.filter(s=>(v.hal==='all'||s.h===v.hal)&&(v.stu==='all'||s.id===v.stu)),ids=new Set(st.map(s=>s.id));
+ const at=D.att.filter(a=>ids.has(a.sid)&&!a.legacy&&a.date>=from&&(v.part==='all'||a.part===v.part));
+ const vk=k=>v.sura==='all'||k.split(':')[0]===String(v.sura);
+ return{st,at,vk,allAt:D.att.filter(a=>ids.has(a.sid)&&!a.legacy)}}
+function svStats(){const{at,vk}=svFilt(),M={};
+ at.forEach(a=>keys(a.range).forEach(k=>{if(!vk(k))return;const r=M[k]||(M[k]={k,den:0,ne:0,nh:0,se:new Set(),sh:new Set()});r.den++;const m=a.marks[k];if(m&&m.e){r.ne++;r.se.add(a.sid)}if(m&&m.h){r.nh++;r.sh.add(a.sid)}}));
+ return Object.values(M)}
+function svCurrent(){const{st,allAt,vk}=svFilt(),M={};
+ st.forEach(s=>{const la={};allAt.filter(a=>a.sid===s.id).forEach(a=>keys(a.range).forEach(k=>{if(!vk(k))return;if(!la[k]||a.date>la[k].date)la[k]=a}));
+  Object.entries(la).forEach(([k,a])=>{const m=a.marks[k];if(m&&(m.e||m.h)){const r=M[k]||(M[k]={k,e:[],h:[]});if(m.e)r.e.push(s.id);if(m.h)r.h.push(s.id)}})});
+ return M}
+const pct=(n,d)=>d?Math.round(n/d*100):null;
+const first=k=>{const[s,v]=k.split(':'),w=Q[s].verses[v].split(' ');return QT(w.slice(0,4).join(' '))+(w.length>4?' …':'')};
+const svSel=(k,label,opts)=>`<label class="dk-f"><span>${label}</span><select data-chg="svf" data-k="${k}">${opts.map(([v,l])=>`<option value="${v}" ${String(S.v[k])===String(v)?'selected':''}>${l}</option>`).join('')}</select></label>`;
+const NODATA='<div class="dk-empty"><b>لا توجد بيانات كافية</b><span>لا توجد محاولات تسميع محفوظة تطابق الفلاتر المحددة. لا تُعرض نسبة 0% في هذه الحالة.</span><button class="dk-btn2" data-act="svreset">إعادة ضبط الفلاتر</button></div>';
+function svBody(){
+ const v=S.v;
+ if(v.load==='loading')return `<div class="dk-kpis">${[1,2,3,4].map(()=>'<div class="dk-kpi"><div class="sk" style="height:12px;width:60%"></div><div class="sk" style="height:26px;width:40%;margin-top:10px"></div></div>').join('')}</div><div class="dk-card">${[1,2,3,4,5,6].map(()=>'<div class="sk" style="height:18px;margin:14px 0"></div>').join('')}</div>`;
+ const F=svFilt(),stats=svStats(),cur=svCurrent();
+ const curStu=new Set();Object.values(cur).forEach(r=>[...r.e,...r.h].forEach(x=>curStu.add(x)));
+ const kp=[['محاولات تسميع محفوظة',F.at.length],['طلاب ضمن النطاق',F.st.length],['آيات عليها ملاحظات حالية',Object.keys(cur).length],['طلاب لديهم ملاحظات حالية',curStu.size]];
+ const kpis=`<div class="dk-kpis">${kp.map(([l,n])=>`<div class="dk-kpi"><span>${l}</span><b>${n}</b></div>`).join('')}</div>`;
+ const tabs=[['err','أكثر الآيات خطأً'],['hes','أكثر الآيات ترددًا'],['cur','الملاحظات الحالية'],['evo','تطور الطالب']];
+ let content;
+ if(!F.at.length)content=NODATA;
+ else if(v.tab==='err'||v.tab==='hes'){const t=v.tab==='err'?'e':'h',rows=stats.filter(r=>r['n'+t]>0).sort((a,b)=>b['n'+t]-a['n'+t]||pct(b['n'+t],b.den)-pct(a['n'+t],a.den)).slice(0,10);
+  content=rows.length?`<table class="dk-t"><thead><tr><th>#</th><th>الآية</th><th>محاولات رُصد فيها ${t==='e'?'خطأ':'تردد'}</th><th>نسبة المحاولات</th><th>الطلاب المتأثرون</th><th></th></tr></thead><tbody>${rows.map((r,i)=>{const p=pct(r['n'+t],r.den);return `<tr data-act="svverse" data-k="${r.k}" tabindex="0"><td class="n">${i+1}</td><td><b>${SN[r.k.split(':')[0]]} · ${r.k.split(':')[1]}</b><span class="q">${first(r.k)}</span></td><td class="n">${r['n'+t]} <small>من ${r.den}</small></td><td><div class="bar"><i class="${t}" style="width:${p}%"></i></div><span class="n">${p}%</span></td><td class="n">${(t==='e'?r.se:r.sh).size}</td><td class="chev">${I.chev}</td></tr>`}).join('')}</tbody></table>`:NODATA;}
+ else if(v.tab==='cur'){const rows=Object.values(cur).sort((a,b)=>(b.e.length+b.h.length)-(a.e.length+a.h.length)).slice(0,12);
+  content=rows.length?`<table class="dk-t"><thead><tr><th>الآية</th><th>طلاب عليهم خطأ حالي</th><th>طلاب عليهم تردد حالي</th><th></th></tr></thead><tbody>${rows.map(r=>`<tr data-act="svverse" data-k="${r.k}" tabindex="0"><td><b>${SN[r.k.split(':')[0]]} · ${r.k.split(':')[1]}</b><span class="q">${first(r.k)}</span></td><td class="n">${r.e.length?`<span class="mk e">${I.e}${r.e.length}</span>`:'—'}</td><td class="n">${r.h.length?`<span class="mk h">${I.h}${r.h.length}</span>`:'—'}</td><td class="chev">${I.chev}</td></tr>`).join('')}</tbody></table><p class="dk-note">الحالة الحالية من أحدث تسميع محفوظ شمل الآية لكل طالب، ولا تتأثر بفلتر الفترة.</p>`:'<div class="dk-empty"><b>لا توجد آيات عليها ملاحظات حالية</b></div>';}
+ else content=svEvo();
+ return `${kpis}<div class="dk-card"><div class="dk-tabs" role="tablist">${tabs.map(([k,l])=>`<button data-act="svtab" data-v="${k}" aria-pressed="${v.tab===k}">${l}</button>`).join('')}</div>${content}
+ ${v.tab==='err'||v.tab==='hes'?'<p class="dk-note">المؤشر = عدد محاولات التسميع التي رُصدت فيها العلامة على الآية، لا عدد مرات وقوعها. النسبة = هذه المحاولات ÷ كل المحاولات التي شملت الآية. السجلات السابقة لتفعيل الميزة مستبعدة.</p>':''}</div>`;
+}
+function svEvo(){
+ const v=S.v,F=svFilt(),sid=v.evo&&F.st.some(s=>s.id===v.evo)?v.evo:F.st[0]&&F.st[0].id;if(!sid)return NODATA;
+ const at=F.at.filter(a=>a.sid===sid).sort((a,b)=>a.date.localeCompare(b.date));
+ const ks=[...new Set(at.flatMap(a=>Object.keys(a.marks).filter(k=>F.vk(k)&&(a.marks[k].e||a.marks[k].h))))].sort(kcmp);
+ const sel=`<label class="dk-f" style="max-width:280px"><span>الطالب</span><select data-chg="svevo">${F.st.map(s=>`<option value="${s.id}" ${s.id===sid?'selected':''}>${s.n}</option>`).join('')}</select></label>`;
+ if(!ks.length)return sel+'<div class="dk-empty"><b>لا توجد ملاحظات لهذا الطالب ضمن الفلاتر</b></div>';
+ const cell=(a,k)=>{if(!covers(a.range,k))return '<td class="na"></td>';const m=a.marks[k];return `<td>${m&&(m.e||m.h)?mks(m):'<span class="dash">—</span>'}</td>`};
+ return `${sel}<div class="dk-scroll"><table class="dk-t evo"><thead><tr><th>الآية</th>${at.map(a=>`<th class="n">${fd(a.date).replace(' 2026','')}<small>${PL[a.part]}</small></th>`).join('')}<th>الحالة الحالية</th></tr></thead><tbody>${ks.map(k=>{const cov=at.filter(a=>covers(a.range,k)),last=cov[cov.length-1],lm=last&&last.marks[k],had=cov.some(a=>a.marks[k]&&(a.marks[k].e||a.marks[k].h));
+  return `<tr class="${v.evoK===k?'hl':''}"><td><b>${SN[k.split(':')[0]]} · ${k.split(':')[1]}</b></td>${at.map(a=>cell(a,k)).join('')}<td>${lm&&(lm.e||lm.h)?mks(lm):had?'<span class="mk r">'+I.ok+'زالت العلامة</span>':'—'}</td></tr>`}).join('')}</tbody></table></div>
+ <p class="dk-note">«—» شملها التسميع دون علامة (لا يعني إتقانًا مستقلًا). الخلية الرمادية: لم تشملها المحاولة. «زالت العلامة»: آخر محاولة شملت الآية بلا علامة بعد علامات سابقة.</p>`;
+}
+function svDrawer(){
+ const k=S.v.verse;if(!k)return '';const[su,vv]=k.split(':').map(Number),F=svFilt(),cur=svCurrent()[k]||{e:[],h:[]};
+ const r=svStats().find(x=>x.k===k)||{den:0,ne:0,nh:0,se:new Set(),sh:new Set()};
+ const byH=SVH.map(h=>{const ids=new Set(F.st.filter(s=>s.h===h.id).map(s=>s.id));let den=0,ne=0,nh=0;F.at.filter(a=>ids.has(a.sid)&&covers(a.range,k)).forEach(a=>{den++;const m=a.marks[k];if(m&&m.e)ne++;if(m&&m.h)nh++});return{h,den,ne,nh}}).filter(x=>x.den);
+ const cs=[...new Set([...cur.e,...cur.h])].map(id=>svStu(id));
+ const P=n=>n===null?'<span class="nd">لا توجد بيانات كافية</span>':n+'%';
+ return `<div class="dk-dim" data-act="svclose"><aside class="dk-drw" data-stop="1" role="dialog" aria-label="تفاصيل الآية">
+ <div class="row between"><h3>سورة ${SN[su]} · الآية ${vv}</h3><button class="x" data-act="svclose" aria-label="إغلاق">${I.x}</button></div>
+ <div class="qv" style="font-size:20px">${QT(Q[su].verses[vv])} <span class="num">${AR(vv)}</span></div>
+ <div class="dk-mini"><div><span>نسبة محاولات الخطأ</span><b>${P(pct(r.ne,r.den))}</b></div><div><span>نسبة محاولات التردد</span><b>${P(pct(r.nh,r.den))}</b></div><div><span>محاولات شملت الآية</span><b>${r.den}</b></div><div><span>طلاب متأثرون</span><b>${new Set([...r.se,...r.sh]).size}</b></div></div>
+ <h4>حسب الحلقة</h4>${byH.length?`<table class="dk-t sm"><thead><tr><th>الحلقة</th><th>المحاولات</th><th>خطأ</th><th>تردد</th></tr></thead><tbody>${byH.map(x=>`<tr><td>${x.h.n}</td><td class="n">${x.den}</td><td class="n">${pct(x.ne,x.den)}%</td><td class="n">${pct(x.nh,x.den)}%</td></tr>`).join('')}</tbody></table>`:'<p class="dk-note">لا توجد بيانات كافية</p>'}
+ <h4>طلاب عليهم ملاحظة حالية (${cs.length})</h4>${cs.length?`<div class="dk-list">${cs.map(s=>`<button data-act="svstu" data-v="${s.id}" data-k="${k}"><span><b>${s.n}</b><small>${SVH.find(h=>h.id===s.h).n}</small></span><span class="row" style="gap:4px">${cur.e.includes(s.id)?mk('e'):''}${cur.h.includes(s.id)?mk('h'):''}${I.chev}</span></button>`).join('')}</div>`:'<p class="dk-note">لا يوجد طلاب عليهم ملاحظة حالية على هذه الآية.</p>'}
+ </aside></div>`;
+}
+function svRender(){
+ const v=S.v,menu=[['الرئيسية',''],['مركز الإحصائيات',''],['مركز التقارير','on'],['قائمة الطلاب',''],['قائمة المعلمين',''],['الحلقات','']];
+ const hal=[['all','كل الحلقات'],...SVH.map(h=>[h.id,h.n])],D=svAll(),stuO=[['all','كل الطلاب'],...D.stu.filter(s=>v.hal==='all'||s.h===v.hal).map(s=>[s.id,s.n])];
+ return `<div class="dk" dir="rtl">
+ <aside class="dk-side"><div class="dk-logo"><span>${I.book}</span><div><b>مجمع النور</b><small>بيانات افتراضية</small></div></div>
+  <nav>${menu.map(([l,o])=>`<span class="${o}">${l}</span>`).join('')}</nav></aside>
+ <div class="dk-main">
+  <header class="dk-top"><div class="dk-search">ابحث عن طالب، معلم، أو صفحة…</div><div class="row" style="gap:12px"><span class="dk-user"><b>أ. خالد المالكي</b><small>مشرف تعليمي</small></span><span class="av" style="width:38px;height:38px">خ</span></div></header>
+  <div class="dk-body" id="dkb">
+   <div class="dk-crumb">مركز التقارير / <b>المصحف التفاعلي</b></div>
+   <div class="row between" style="align-items:flex-end;flex-wrap:wrap;gap:10px"><div><h2 class="dk-h">تقرير المصحف التفاعلي</h2><p class="dk-sub">مواضع الخطأ والتردد في تسميع الطلاب، وتطور حالتهم</p></div><span class="dk-scope">${I.lock}نطاق إشرافك: مجمع النور · ${SVH.length} حلقات · ${D.stu.length} طالبًا</span></div>
+   <div class="dk-filters">${svSel('period','الفترة',[['all','كل الفترات'],['sem','الفصل الدراسي الأول'],['30','آخر 30 يومًا']])}${svSel('hal','الحلقة',hal)}${svSel('stu','الطالب',stuO)}${svSel('sura','السورة',[['all','كل السور'],[67,'الملك'],[68,'القلم'],[78,'النبأ']])}${svSel('part','البند',[['all','كل البنود'],['d','درس اليوم'],['n','المراجعة القريبة'],['f','المراجعة البعيدة']])}<button class="dk-btn2" data-act="svreset">إعادة ضبط</button></div>
+   ${svBody()}
+  </div>
+ </div>${svDrawer()}</div>`;
+}
+function svFresh(){return{period:'all',hal:'all',stu:'all',sura:'all',part:'all',tab:'err',verse:null,evo:null,evoK:null,load:'ok'}}
+Object.assign(A,{
+ svtab(d){S.v.tab=d.v;render()},
+ svverse(d){S.v.verse=d.k;render()},
+ svclose(d,e){if(e&&e.target.closest('[data-stop]')&&!e.target.closest('[data-act="svclose"].x'))return;S.v.verse=null;render()},
+ svstu(d){S.v.verse=null;S.v.tab='evo';S.v.evo=d.v;S.v.evoK=d.k;render()},
+ svreset(){const t=S.v.tab;S.v=svFresh();S.v.tab=t;render()},
+});
+document.addEventListener('change',e=>{const el=e.target.closest('[data-chg]');if(!el||!root().contains(el))return;
+ if(el.dataset.chg==='svf'){S.v[el.dataset.k]=el.value;if(el.dataset.k==='hal')S.v.stu='all';S.v.verse=null;render()}
+ if(el.dataset.chg==='svevo'){S.v.evo=el.value;S.v.evoK=null;render()}});
+function fitDesk(){const w=document.getElementById('deskwrap');if(!w||w.hidden)return;const d=document.getElementById('desk'),sc=Math.min(1,w.parentElement.clientWidth/1280);d.style.transform=`scale(${sc})`;w.style.height=(800*sc)+'px';w.style.width=(1280*sc)+'px'}
+window.addEventListener('resize',fitDesk);
+
 /* ---------- scenarios ---------- */
 function pushToday(){PK.filter(pOk).forEach(p=>S.att.push({id:'t1'+p,date:TODAY,range:clone(PARTS[p].r),complete:S.t.cp[p]!==false,marks:clone(S.t.pm[p]),edit:true}))}
 const nearSet={'67:9':{h:1},'67:19':{e:1}};
@@ -917,8 +1114,17 @@ const SC=[
  ['S-04','آيات تحتاج مراجعة',()=>{St();S.scr='list';S.s.tab='review'},'كل آية مرة واحدة؛ اضغط للانتقال لموضعها.'],
  ['S-04','لا توجد آيات',()=>{St();S.scr='list';S.s.tab='review';S.s.empty=true},'«لا توجد آيات عليها ملاحظات حالية».'],
  ['S-05','إقرار «راجعت الآية»',()=>{St();S.scr='course';S.s.course='a3';S.s.sel='67:5';S.sheet='verse'},'بدّل المفتاح: تبقى علامة المعلم والآية في القائمة.'],
+ ['v','المشرف'],
+ ['SV-01','أكثر الآيات خطأً',()=>{Sv()},'ترتيب الآيات بعدد محاولات التسميع التي رُصد فيها خطأ، مع النسبة إلى كل المحاولات التي شملت الآية والطلاب المتأثرين.'],
+ ['SV-01','أكثر الآيات ترددًا',()=>{Sv();S.v.tab='hes'},'المؤشر نفسه لعلامة التردد.'],
+ ['SV-02','الملاحظات الحالية',()=>{Sv();S.v.tab='cur'},'عدد الطلاب الذين تظهر في حالتهم الحالية علامة على كل آية.'],
+ ['SV-03','تفاصيل آية',()=>{Sv();S.v.verse='67:19'},'النسب، والتوزيع حسب الحلقة، والطلاب الذين عليهم ملاحظة حالية.'],
+ ['SV-04','تطور الطالب',()=>{Sv();S.v.tab='evo';S.v.evo='s0'},'مقارنة المحاولات المتتالية التي شملت كل آية لمعرفة زوال العلامة.'],
+ ['SV-05','لا توجد بيانات كافية',()=>{Sv();S.v.part='f';S.v.sura='78'},'عند عدم وجود محاولات مؤهلة تظهر العبارة بدل 0%.'],
+ ['SV-06','تحميل التقرير',()=>{Sv();S.v.load='loading'},''],
 ];
 function T(){const keep=S?S.att.filter(a=>a.id!=='t1'):null;S=fresh();S.role='t';S.scr='rec'}
+function Sv(){St();S.role='sv';S.scr='rep'}
 function St(){const extra=!S?[]:S.att.filter(a=>a.id.startsWith('t1'));const sf=S&&S.t;S=fresh();if(extra.length){S.att.push(...extra);S.t=sf}S.role='s';S.scr='home'}
 let cur=1;
 function run(i){cur=i;const s=SC[i];S.toast=null;s[2]();document.getElementById('cap').innerHTML=`<b>${s[0]} · ${s[1]}</b><br>${s[3]||''}`;render(el=>{if(S.s.sel&&S.role==='s'&&S.scr==='course')scrollToK(S.s.sel);if(S.role==='t'&&S.scr==='mushaf'&&S.t.sel)scrollToK(S.t.sel)})}
@@ -930,7 +1136,7 @@ function buildPanel(){
  document.getElementById('list').innerHTML=h;document.getElementById('msel').innerHTML=o+'</optgroup>';
  document.getElementById('list').onclick=e=>{const b=e.target.closest('.sc');if(b)run(+b.dataset.i)};
  document.getElementById('msel').onchange=e=>run(+e.target.value);
- document.querySelectorAll('.role button').forEach(b=>b.onclick=()=>run(b.dataset.r==='t'?1:SC.findIndex(s=>s[0]==='S-00')+(S.att.some(a=>a.id.startsWith('t1'))?1:0)));
+ document.querySelectorAll('.role button').forEach(b=>b.onclick=()=>run(b.dataset.r==='t'?1:b.dataset.r==='sv'?SC.findIndex(s=>s[0]==='SV-01'):SC.findIndex(s=>s[0]==='S-00')+(S.att.some(a=>a.id.startsWith('t1'))?1:0)));
  document.getElementById('simf').onchange=e=>{S.t.simFail=e.target.checked};
  document.querySelectorAll('.top nav button').forEach(b=>b.onclick=()=>{const d=b.dataset.v==='doc';document.getElementById('proto').hidden=d;document.getElementById('docv').hidden=!d;document.querySelectorAll('.top nav button').forEach(x=>x.setAttribute('aria-pressed',x===b));window.scrollTo(0,0)});
 }
